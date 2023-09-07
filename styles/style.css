@@ -1,0 +1,153 @@
+@font-face {
+    font-family: 'prestige-elite-std';
+    src: url(../font/prestige-elite-std.otf);
+}
+@font-face {
+    font-family: 'NeueItalic';
+    src: url(../font/NeueHaasDisplayRomanItalic.ttf);
+}
+
+body{
+    background-color: #E1DEE9;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #BFDBF7;
+}
+.nav{
+    display: flex;
+    margin-right: 6%;
+    gap: 5%;
+}
+.nav a{
+    text-decoration: none;
+    font-family: prestige-elite-std;
+    color: #022B3A;
+    font-weight: 600;
+    font-size: 3vh;
+    margin-right: 2vh;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.fotoPrincipal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+.textPrincipal{
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+    font-family: prestige-elite-std;
+    font-size: 1.6rem;
+}
+#botaoRolagem{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vh;
+    width: 3vh;
+    cursor: pointer;
+    animation: jumping 1s linear infinite;
+}
+@keyframes jumping {
+    from{transform: translateY(-15px);}
+    50% {transform: translateY(0);}
+    to {transform: translateY(-15px);}
+}
+
+#biografia{
+    display: flex;
+    height: 100vh;
+}
+#biografia p{
+    list-style: none;
+}
+.imgBio{
+    height: 80vh;
+    width: 35vw;
+    margin: 10vh 0 0 5vw;
+}
+.textBio{
+    margin-top: 10vh;
+    font-family: prestige-elite-std;
+}
+.textBio h1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2vw;
+    font-size: 3rem;
+}
+.textBio p{
+    font-weight: 400;
+    max-width: 50vw;
+    font-size: 1.5rem;
+    margin-left: 2vw;
+}
+
+#curiosidades{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#curiosidades div{
+    display: flex;
+    height: 100vh;
+    font-family: prestige-elite-std;
+    flex-direction: column;
+    width: 50vw;
+}
+#curiosidades h2{
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+}
+#curiosidades li{
+    font-size: 1.5rem;
+    width: 47vw;
+    margin: 5vh 0 0 5vw;
+}
+ .spotify{
+    margin-right: 5vw;
+    width: 25vw;
+    height: 80vh;
+    border-style: none;
+}
+
+.rodape{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1F7A8C;
+    height: 10vh;
+}
+.text{
+    display: flex;
+    font-size: 2.5vh;
+    font-family: teste;
+    align-items: center;
+    font-family: NeueItalic;
+    justify-content: flex-end;
+    width: 59%;
+}
+.redeSocial{
+    display: flex;
+    justify-content: flex-end;
+    width: 41%;
+    align-items: center;
+    gap: 2rem;
+    height: 100%;
+    margin: 0 2rem 0 0;
+}
+.iconRedeSocial{
+    width: 5vh;
+}
