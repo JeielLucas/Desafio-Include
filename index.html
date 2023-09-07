@@ -4,8 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio Include</title>
+     <link rel="stylesheet" type="text/css" href="styles/rodape.css">
+     <link rel="stylesheet" type="text/css" href="styles/reset.css">
+     <link rel="stylesheet" type="text/css" href="styles/header.css">
+     <link rel="stylesheet" type="text/css" href="styles/main.css">
+     <link rel="icon" href="" type="image/x-icon">
 </head>
 <body>
     
+    <header id="header">
+        <img src="img/desktop.png" alt="imagem logo do site, contendo o nome Taylor Swift">
+        <nav class="nav">
+            <ul><a href="#header">HOME</a></ul>
+            <ul><a href="#biografia">BIOGRAFIA</a></ul>
+            <ul><a href="#curiosidades">CURIOSIDADES</a></ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="principal">
+            <img class="fotoPrincipal" src="img/TS.jpg" alt="Imagem da cantora Taylor Swift">
+            <h2 class="textPrincipal">Quer saber mais sobre a Taylor Swift?</h2>
+            <a href="#biografia"><img id="botaoRolagem" src="img/down-arrow.svg" alt=""></a>
+        </section>
+
+        <section id="biografia">
+            <img class="imgBio" src="img/TS_bio.png" alt="Imagem da cantora Taylor Swift acompanhando sua biografia">
+            <h1>Biografia</h1>
+            <p>Taylor Alison Swift, nascida em 13 de dezembro de 1989, em Reading, Pensilvânia, é uma renomada cantora, compositora e atriz americana. Ela começou sua carreira musical aos 16 anos, assinando com a gravadora Big Machine Records. Seu álbum de estreia homônimo, lançado em 2006, a catapultou para o estrelato com hits como "Tim McGraw" e "Teardrops on My Guitar".
+
+                Ao longo de sua carreira, Taylor Swift lançou vários álbuns de sucesso, incluindo "Fearless", "Speak Now", "Red", "1989", "Reputation", "Lover" e "Folklore", entre outros. Ela é conhecida por sua habilidade única de contar histórias em suas letras e por seu talento para se reinventar musicalmente.
+                
+                Além de seu sucesso na música, Taylor Swift também é uma das artistas mais premiadas da história, com inúmeros prêmios, incluindo vários Grammy Awards. Ela também se destacou por sua defesa de questões femininas e sociais, bem como por sua filantropia.
+                
+                Taylor Swift é uma das artistas mais influentes da indústria musical e continua a ter um impacto duradouro na cultura pop global. Ela é uma das maiores artistas da sua geração e continua a evoluir em sua carreira, abraçando diferentes estilos musicais e desafios artísticos.</p>
+        </section>
+
+        <section id="curiosidades">
+            <h2>Curiosidades</h2>
+            <p>Seu primeiro emprego foi de ajudante de seu pai na fazenda de árvores de natal da família.</p>
+            <p>A música “Mary’s Song” foi inspirada em um casal de vizinhos da Taylor que já eram casados há muito tempo, e ela mesma disse em entrevista que isso servia de lição pra ela de que casamentos podem ser felizes por toda uma vida.</p>
+            <p>Taylor escreveu a música “Love Story” em 20 minutos no chão do seu quarto.</p>
+            <p>O número da sorte de Taylor é o 13.</p>
+            <p>Quando criança Taylor teve um cavalo chamado Cin-T, abreviação para Cinnamon Twist, um tipo de comida.</p>
+            <!--Aqui vai ser o espaço destinado a API do spotify-->
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <span class="text">Desenvolvido por © Jeiel Lucas</span>
+        <div class="redeSocial">
+            <a href="https://github.com/JeielLucas" target="_blank">
+                <img class="iconRedeSocial" src="img/GitHub_Icon.png" alt="Simbolo do GitHub para redirecionamento para a plataforma">
+            </a>
+            <a href="https://www.linkedin.com/in/jeiel-lucas-329799236/" target="_blank">
+                <img class="iconRedeSocial" src="img/Linkedin_Icon.png" alt="Simbolo do Linkedin para redirecionamento para a plataforma">
+            </a>
+        </div>
+    </footer>
 </body>
+<script src="main.js"></script>
 </html>

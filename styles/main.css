@@ -1,0 +1,51 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.fotoPrincipal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+.textPrincipal{
+    text-align: center;
+    margin-top: 2vh;
+}
+#botaoRolagem{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vh;
+    width: 3vh;
+    cursor: pointer;
+    animation: jumping 1s linear infinite;
+}
+@keyframes jumping {
+    from{transform: translateY(-15px);}
+    50% {transform: translateY(0);}
+    to {transform: translateY(-15px);}
+}
+
+
+
+#biografia{
+    display: flex;
+    height: 100vh;
+}
+#biografia p{
+    
+    list-style: none;
+}
+.imgBio{
+    width: 60vh;
+}
+
+
+
+#curiosidades{
+    display: flex;
+    height: 100vh;
+}
