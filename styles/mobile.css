@@ -53,6 +53,7 @@
     #curiosidades{
         display: flex;
         flex-direction: column;
+        gap: 40vh;
     }
     #curiosidades div{
         display: flex;
@@ -70,11 +71,8 @@
     }
 
     .spotify{
-        width: 50vw;
-        height: 40vh;
-        margin-top: 5vh;
-        margin-bottom: 5vh;
-        margin-top: 5vh;
+        width: 80vw;
+        height: 25vh;
     }
 }
 
