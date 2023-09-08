@@ -23,9 +23,8 @@
         
         outline-style: none;
     }
-    #nav.active #menu{
+    #nav.active a{
         display: flex;
-        flex-direction: column;
     }
 
     .logoCelular{
@@ -103,5 +102,33 @@
     }
 }
 @media (max-width: 1200px) {
-    
+    header{
+        width: 100vw;
+        height: 10vh;
+    }
+    .logoCelular{
+        display: block;
+        margin-left: 5vw;
+    }
+    .logoDesktop{
+        display: none;
+    }
+
+    .fotoPrincipal{
+        height: 75vh;
+    }
+
+    .textBio p{
+        font-size: 1.3rem;
+    }
+
+    #curiosidades li{
+        font-size: 1.3rem;
+    }
+
+    .spotify{
+        height: 57vh;
+        width: 35vw;
+    }
+
 }
