@@ -23,7 +23,7 @@
         
         outline-style: none;
     }
-    #nav.active #menu{
+    #nav.active a{
         display: flex;
         flex-direction: column;
     }
