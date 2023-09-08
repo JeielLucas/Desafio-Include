@@ -1,4 +1,4 @@
-.menuButton{
+#menuButton{
     display: none;
 }
 .logoCelular{
@@ -14,15 +14,19 @@
     header{
         height: 10vh;
     }
-    .nav a{
+    #nav a{
         display: none;
     }
-    .menuButton{
+    #menuButton{
         display: flex;
         background-color: #BFDBF7;
-        border: none;
-        color: red;
+        
+        outline-style: none;
     }
+    #nav.active #menu{
+        display: flex;
+    }
+
     .logoCelular{
         display: block;
         margin-left: 5vw;

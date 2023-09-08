@@ -17,12 +17,12 @@ header{
     justify-content: space-between;
     background-color: #BFDBF7;
 }
-.nav{
+#nav{
     display: flex;
     margin-right: 6%;
     gap: 5%;
 }
-.nav a{
+#nav a{
     text-decoration: none;
     font-family: prestige-elite-std;
     color: #022B3A;
