@@ -6,7 +6,9 @@
     font-family: 'NeueItalic';
     src: url(../font/NeueHaasDisplayRomanItalic.ttf);
 }
-
+.menuButton{
+    display: none;
+}
 body{
     background-color: #E1DEE9;
 }
@@ -69,9 +71,6 @@ html{
     display: flex;
     height: 100vh;
 }
-#biografia p{
-    list-style: none;
-}
 .imgBio{
     height: 80vh;
     width: 35vw;
@@ -88,7 +87,6 @@ html{
     font-size: 3rem;
 }
 .textBio p{
-    font-weight: 400;
     max-width: 50vw;
     font-size: 1.5rem;
     margin-left: 2vw;

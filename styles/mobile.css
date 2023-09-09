@@ -1,13 +1,11 @@
 #menuButton{
     display: none;
+    width: 50px;
 }
 .logoCelular{
     display: none;
 }
 @media (max-width: 768px){
-    body{
-        background-color: purple;
-    }
     header{
         height: 10vh;
     }
@@ -17,9 +15,8 @@
     .logoDesktop{
         display: none;
     }
-    #menuButton{
-        display: flex;
-        background-color: #BFDBF7;
+    .menuButton{
+        display: block;
     }
     #nav a{
         display: none;
@@ -39,21 +36,33 @@
         margin-top: 2vh;
     }
     .textBio{
-        display: none;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        margin-top: 0;
+        gap: 85vh;
+        width: 100vw;
     }
     .imgBio{
         width: 100vw;
         height: 80vh;
-        margin-top: 20vh;
         margin: 0;
+        margin-top: 15vh;
     }
     .textBio h1{
-        background-color: #BFDBF7;
+        font-size: 2rem;
+        margin-top: 7vh;
+    }
+    .textBio p{
+        font-size: 1.2rem;
+        max-width: 90vw;
+        margin-left: 5vw;
     }
     #curiosidades{
         display: flex;
         flex-direction: column;
-        gap: 40vh;
+        
+        margin-top: 150vh;
     }
     #curiosidades div{
         display: flex;
@@ -71,24 +80,22 @@
     }
 
     .spotify{
+        margin-top: 70vh;
         width: 80vw;
         height: 25vh;
+        margin-bottom: 10vh;
     }
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
-    body{
-        background-color: red;
-    }
+@media (min-width: 768px) and (max-width: 991px) {
     header{
         height: 10vh;
     }
     #nav a{
         display: none;
     }
-    #menuButton{
-        display: flex;
-        background-color: #BFDBF7;
+    .menuButton{
+        display: block;
     }
     #nav.active a{
         display: flex;
@@ -167,13 +174,13 @@
         width: 80%;
     }
 }
-@media (min-width: 992px) and (max-width: 1200px) {
-    body{
-        background-color: aqua;
-    }
+@media (min-width: 992px){
     header{
-        width: 100vw;
+        width: 100%;
         height: 10vh;
+    }
+    .menuButton{
+        display: none;
     }
     .logoCelular{
         display: block;
@@ -200,4 +207,12 @@
         width: 35vw;
     }
 
+}
+@media (min-width: 1200px){
+    .logoCelular{
+        display: none;
+    }
+    .logoDesktop{
+        display: block;
+    }
 }
