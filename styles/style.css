@@ -6,7 +6,10 @@
     font-family: 'NeueItalic';
     src: url(../font/NeueHaasDisplayRomanItalic.ttf);
 }
-.menuButton{
+#botaoFechar{
+    display: none;
+}
+#menuButton{
     display: none;
 }
 body{
@@ -69,7 +72,6 @@ html{
 
 #biografia{
     display: flex;
-    height: 100vh;
 }
 .imgBio{
     height: 80vh;
@@ -96,10 +98,11 @@ html{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
 }
 #curiosidades div{
     display: flex;
-    height: 100vh;
     font-family: prestige-elite-std;
     flex-direction: column;
     width: 50vw;
@@ -124,27 +127,21 @@ html{
 .rodape{
     display: flex;
     align-items: center;
-    justify-content: center;
     background-color: #1F7A8C;
     height: 10vh;
 }
 .text{
     display: flex;
     font-size: 2.5vh;
-    font-family: teste;
-    align-items: center;
     font-family: NeueItalic;
-    justify-content: flex-end;
-    width: 59%;
+    justify-content: center;
+    text-align: center;
+    margin-left: 40%;
 }
 .redeSocial{
     display: flex;
-    justify-content: flex-end;
-    width: 41%;
-    align-items: center;
-    gap: 2rem;
-    height: 100%;
-    margin: 0 2rem 0 0;
+    gap: 2vw;
+    margin-left: 30%;
 }
 .iconRedeSocial{
     width: 5vh;
