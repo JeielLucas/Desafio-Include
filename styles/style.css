@@ -82,6 +82,9 @@ html{
     margin-top: 10vh;
     font-family: prestige-elite-std;
 }
+#h1-mobile{
+    display: none;
+}
 .textBio h1{
     display: flex;
     justify-content: center;
