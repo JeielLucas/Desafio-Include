@@ -1,9 +1,17 @@
 #menuButton{
     display: none;
-    width: 50px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
 .logoCelular{
     display: none;
+}
+#botaoFechar{
+    display: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
 @media (max-width: 768px){
     header{
@@ -15,13 +23,8 @@
     .logoDesktop{
         display: none;
     }
-    #botaoFechar{
-        display: none;
-    }
     #menuButton{
         display: block;
-        background-color: #BFDBF7;
-        border-style: none;
     }
     #nav a{
         display: none;
@@ -29,18 +32,26 @@
     #nav.active{
         display: flex;
         flex-direction: column;
+        z-index: 2;
+        background-color: #BFDBF7;
         margin-right: 0;
-        width: 60vw;
+        gap: 2vh;
+        margin-top: 10vh;
     }
     #nav.active a{
         display: flex;
         font-size: 1.2rem;
-        margin-top: 5vh;
+        margin-right: 0;
     }
-    #nav.active button{
+    #nav.active #menuButton{
         display: none;
     }
-
+    #nav.active #botaoFechar{
+        display: flex;
+        justify-content: flex-end;
+        margin: 2vh 2vh 0 0;
+        
+    }
 
     .fotoPrincipal{
         height: 70vh;
@@ -72,10 +83,14 @@
     #h1-mobile{
         display: block;
         text-align: center;
+        margin-top: 7vh;
+        font-size: 2rem;
+        margin-bottom: 3vh;
     }
     .textBio h1{
         font-size: 2rem;
         margin: 0;
+        display: none;
     }
     .textBio p{
         font-size: 1.2rem;
@@ -138,6 +153,33 @@
     #menuButton{
         display: block;
     }
+    #nav.active{
+        display: flex;
+        flex-direction: column;
+        background-color: #BFDBF7;
+        height: 50vh;
+        width: 30vw;
+        position: relative;
+        margin-right: 0;
+        justify-content: center;
+        gap: 0;
+    }
+    #nav.active a{
+        display: flex;
+        margin-left: 3vh;
+        font-size: 1.2rem;
+        padding-bottom: 1rem;
+    }
+    #nav.active #menuButton{
+        display: none;
+    }
+    #nav.active #botaoFechar{
+        display: flex;
+        background-color: transparent;
+        border: none;
+        margin-top: 8vh;
+        justify-content: flex-end;
+    }
 
     .logoCelular{
         display: block;
@@ -180,6 +222,7 @@
     .textBio h1{
         display: block;
         font-size: 2rem;
+        text-align: center;
     }
     .textBio p{
         font-size: 1.1rem;
@@ -192,6 +235,7 @@
         display: flex;
         align-items: center;
         flex-direction: column;
+        margin-bottom: 0;
     }
     #curiosidades div{
         width: 80vw;
@@ -212,9 +256,9 @@
         margin-top: 4vh;
         margin-bottom: 5vh;
     }
-
     .text{
-        width: 80%;
+        width: 70%;
+        margin-left: 40%;
     }
 }
 @media (min-width: 992px){
